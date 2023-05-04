@@ -1,0 +1,20 @@
+import urllib.request
+
+import os
+
+# URL of the website to fetch data from
+
+url = 'https://example.com/'
+
+# Create a folder to store the fetched data
+
+folder_name = 'fetched_data'
+
+os.makedirs(folder_name, exist_ok=True)
+
+# Fetch the data and save it to a file in the folder
+
+file_name = f"{folder_name}/fetched_data.html"
+
+urllib.request.urlretrieve(url, file_name)
+
